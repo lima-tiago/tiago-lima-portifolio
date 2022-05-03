@@ -1,11 +1,15 @@
 import type { NextPage } from 'next';
-import { Header } from 'components/Header';
+import { Header, LeftItems } from 'components';
+
+import * as S from './styles';
 
 const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <div className="container"></div>
+      <S.Main className="container">
+        <LeftItems />
+      </S.Main>
     </>
   );
 };

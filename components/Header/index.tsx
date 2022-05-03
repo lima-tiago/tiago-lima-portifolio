@@ -14,7 +14,7 @@ export const Header = () => {
         />
         <div>
           <S.UserName>Tiago Lima</S.UserName>
-          <S.SubName>{'// Temporada 24 / @tiagof.ts'}</S.SubName>
+          <S.SubName>{'// Season 24 / @tiagof.ts'}</S.SubName>
         </div>
       </div>
     </S.Content>

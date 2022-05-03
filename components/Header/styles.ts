@@ -3,7 +3,7 @@ import BgBadge from 'public/assets/bg-badge.jpeg';
 
 export const Content = styled.nav`
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   padding: 24px 0 8px;
@@ -11,6 +11,7 @@ export const Content = styled.nav`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 999;
   .container {
     flex-direction: row;
     align-items: center;
