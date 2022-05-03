@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 import { Header, LeftItems, Loading, AudioBackground } from 'components';
 
-import * as S from './styles';
+import * as S from '../styles/styles';
 
 const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
