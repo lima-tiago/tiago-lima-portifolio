@@ -11,5 +11,11 @@ export const Content = styled.main`
     border-radius: 4px;
     border: none;
     background: rgba(245, 245, 245, 0.15);
+
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+    }
   }
 `;
