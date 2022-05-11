@@ -6,19 +6,21 @@ import * as S from '../styles/styles';
 
 const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [startSong, setStartSong] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      setStartSong(true);
     }, 25000);
   }, []);
   return (
     <>
-      <AudioBackground audioStart={startSong} />
+      <AudioBackground
+        isMuted={isMuted}
+        handleMute={() => setIsMuted(!isMuted)}
+      />
       {isLoading ? (
-        <Loading />
+        <Loading isMuted={isMuted} />
       ) : (
         <>
           <Header />

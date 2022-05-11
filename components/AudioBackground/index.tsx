@@ -1,13 +1,18 @@
 import * as S from './styles';
 
 type AudioBackgroundProps = {
-  audioStart: boolean;
+  isMuted: boolean;
+  handleMute: () => void;
 };
 
-export const AudioBackground = ({ audioStart }: AudioBackgroundProps) => {
+export const AudioBackground = ({
+  isMuted,
+  handleMute,
+}: AudioBackgroundProps) => {
   return (
     <S.Content>
-      <audio src="/assets/background-song.mp3" autoPlay={audioStart} loop />
+      <audio src="/assets/background-song.mp3" autoPlay loop muted={isMuted} />
+      <button onClick={handleMute}>SOM</button>
     </S.Content>
   );
 };
